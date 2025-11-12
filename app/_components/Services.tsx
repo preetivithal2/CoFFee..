@@ -51,10 +51,10 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col w-[350px]'>
-                <button className='bg-[#461901] color-white rounded-2xl px-10 py-2 m-2 '>Read more..</button>
+            <div className='flex flex-col w-[350px] items-center justify-center'>
+                <button className='bg-[#461901] color-white rounded-2xl px-10 py-2 m-2'>Read more..</button>
             </div>
-
+<hr />
         </div>
     )
 }

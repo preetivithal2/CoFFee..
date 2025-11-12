@@ -11,23 +11,30 @@ const Offer = () => {
                 </div>
 
             </div>
-            <div className='flex col-sm-6'>
+            <div className="grid grid-cols-2 gap-4 justify-items-center mt-6">
                 <div>
-                    <Image src={"/off1.jpg"} alt='area' width={100} height={100} />
+                    <Image src={"/off1.jpg"} alt='area' width={150} height={150} />
                 </div>
                 <div>
-                    <Image src={"/off2.jpg"} alt='area' width={100} height={100} />
+                    <Image src={"/off2.jpg"} alt='area' width={150} height={150} />
                 </div>
                 <div>
-                    <Image src={"/off3.webp"} alt='area' width={100} height={100} />
+                    <Image src={"/off3.webp"} alt='area' width={150} height={150} />
                 </div>
                 <div>
-                    <Image src={"/off4.jpeg"} alt='area' width={100} height={100} />
+                    <Image src={"/off4.jpeg"} alt='area' width={150} height={200} />
                 </div>
             </div>
+            <br />
+            <hr />
             <div>
-                <div>Timing schdle</div>
                 <div>
+                    <div className='flex items-center justify-center mt-7'>
+                <h1 className='text-[#461901] font-bold text-4xl'>Timing schedule</h1>
+            </div>
+                </div>
+                <div className='flex flex-col w-[350px] items-center justify-center'> 
+                    <button className='bg-[#461901] color-white rounded-2xl px-10 py-2 m-2'></button>
                     <button>10.00AM</button>
                     <button>03.00PM</button>
                     <button>09.00PM</button>
