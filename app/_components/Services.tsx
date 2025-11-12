@@ -6,7 +6,6 @@ const Services = () => {
         <div>
             <div className='flex items-center justify-center mt-7'>
                 <h1 className='text-[#461901] font-bold text-4xl'>Flavours</h1>
-
             </div>
             <div className='bg-white text-black flex items-center justify-center rounded-4xl m-5 p-3'>
                 <div>
