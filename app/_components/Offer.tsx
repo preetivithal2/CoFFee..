@@ -30,15 +30,13 @@ const Offer = () => {
             <div>
                 <div>
                     <div className='flex items-center justify-center mt-7'>
-                <h1 className='text-[#461901] font-bold text-4xl'>Timing schedule</h1>
-            </div>
+                        <h1 className='text-[#461901] font-bold text-4xl'>Timing schedule</h1>
+                    </div>
                 </div>
-                <div className='flex flex-col w-[350px] items-center justify-center'> 
-                    <button className='bg-[#461901] color-white rounded-2xl px-10 py-2 m-2'></button>
-                    <button>10.00AM</button>
-                    <button>03.00PM</button>
-                    <button>09.00PM</button>
-
+                <div className='flex items-center justify-center m-6'>
+                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>10.00AM</button>
+                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>03.00PM</button>
+                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>09.00PM</button>
                 </div>
             </div>
             <div>
