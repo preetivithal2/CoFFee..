@@ -30,7 +30,7 @@ const Offer = () => {
             <div>
                 <div>
                     <div className='flex items-center justify-center mt-7'>
-                        <h1 className='text-[#461901] font-bold text-4xl'>Timing schedule</h1>
+                        <h1 className='text-[#461901] font-bold text-3xl'>Timing schedule</h1>
                     </div>
                 </div>
                 <div className='flex items-center justify-center m-6'>
@@ -39,13 +39,21 @@ const Offer = () => {
                     <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>09.00PM</button>
                 </div>
             </div>
-            <div>
-                <div>image</div>
+
+            <div className='bg-white text-black flex items-center justify-center rounded-4xl m-5 p-3'>
                 <div>
-                    <h1>Tommy james</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <Image src={"/feedback.jpg"} alt="serice image" width={300} height={300} />
+                </div>
+                <div>
+                    <div className='mx-6'>
+                        <h1 className='text-1xl font-bold'>Tommy james</h1>
+                        <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat !</p>
+                    </div>
+                    <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center w-25 px-2 mx-6 mt-2' >
+                    </div>
                 </div>
             </div>
+          
         </div>
     )
 }
