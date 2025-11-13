@@ -32,7 +32,8 @@ export default function Navbar() {
                 alt="Your Company"
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
                 className="h-8 w-auto"
-              />
+              /> 
+              
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
