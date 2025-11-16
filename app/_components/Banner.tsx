@@ -16,51 +16,49 @@ function Banner() {
 
                 </div>
             </div>*/}
-<section className="w-full bg-[#f5ede7] flex flex-col items-center relative">
-    {/* Background Image */}
-    <img 
-      src="/Coffee.png" 
-      alt="coffee" 
-      className="w-full h-[400px] object-cover md:h-[550px]"
-    />
 
-    {/* Text Content */}
-    <div className="absolute top-[30%] md:top-[40%] flex flex-col items-center px-4 text-center">
-      <h1 className="text-[#461901] font-bold text-4xl md:text-6xl">
-        CoFFee
-      </h1>
 
-      <p className="text-black mt-4 max-w-[350px] md:max-w-[500px] text-sm md:text-base">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-        voluptas qui aliquam saepe? Dolorem eligendi cum voluptatem.
-      </p>
-    </div>
+           <section className="relative w-full bg-[#f5ede7] overflow-hidden">
 
-    {/* Buttons */}
-    <div className="absolute bottom-[20px] flex flex-col items-center space-y-3">
-      <button className="bg-[#461901] text-white rounded-2xl px-16 py-2">
-        Order Now
-      </button>
-      <button className="bg-[#461901] text-white rounded-2xl px-16 py-2">
-        Best deal
-      </button>
-    </div>
+  {/* Desktop Image */}
+  <img 
+    src="/Coffee.png"
+    alt="coffee"
+    className="hidden sm:block w-full h-[500px] md:h-[650px] object-cover"
+  />
+
+  {/* Mobile Image */}
+  <img 
+    src="/coffemobile.jpg"
+    alt="coffee-mobile"
+    className="block sm:hidden w-full h-[450px] object-cover opacity-30"
+  />
+
+  {/* Text Content */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
+    <h1 className="text-[#461901] font-bold text-4xl sm:text-5xl md:text-6xl drop-shadow">
+      CoFFee
+    </h1>
+
+    <p className="text-black mt-3 max-w-[350px] sm:max-w-[450px] md:max-w-[550px] text-sm sm:text-base">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+      voluptas qui aliquam saepe? Dolorem eligendi cum voluptatem.
+    </p>
+  </div>
+
+  {/* Buttons */}
+  <div className="absolute inset-x-0 bottom-6 sm:bottom-10 flex flex-col items-center gap-3">
+    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
+      Order Now
+    </button>
+
+    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
+      Best deal
+    </button>
+  </div>
+
 </section>
 
-
-            {/* <section className="w-full bg-[#f5ede7] flex flex-col items-center">
-                <img src="/Coffee.png" alt="coffee" className="w-full object-cover" />
-                <div className='flex items-center justify-center flex-col relative w-100 sm:not-[relative]:'>
-                    <h1 className='text-[#461901] font-bold text-6xl absolute bottom-[300px]'>CoFFee</h1>
-                    <p className='text-black flex text-center items-center justify-content-center mx-5 absolute bottom-[220px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. temporibus voluptas qui aliquam saepe? Dolorem eligendi cum voluptatem.</p>
-                </div>
-            </section>
-
-
-            <div className='flex flex-col w-[300px] relative '>
-                <button className='bg-[#461901] color-white rounded-2xl px-[100px] py-2 m-2 absolute bottom-[150px]'>Order Now</button>
-                <button className='bg-[#461901] color-white rounded-2xl px-[103px] py-2 m-2 absolute bottom-[100px]'>Best deal</button>
-            </div> */}
             
 
 
