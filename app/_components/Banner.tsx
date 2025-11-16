@@ -41,8 +41,8 @@ function Banner() {
     </h1>
 
     <p className="text-black mt-3 max-w-[350px] sm:max-w-[450px] md:max-w-[550px] text-sm sm:text-base">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-      voluptas qui aliquam saepe? Dolorem eligendi cum voluptatem.
+      Made from roasted coffee beans, it brings warmth and comfort with every sip,
+       whether enjoyed early in the morning or during a peaceful break.
     </p>
   </div>
 
