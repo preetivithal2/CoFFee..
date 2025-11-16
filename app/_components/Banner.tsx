@@ -18,51 +18,35 @@ function Banner() {
             </div>*/}
 
 
-           <section className="relative w-full bg-[#f5ede7] overflow-hidden">
+            <section className="relative w-full bg-[#f5ede7] overflow-hidden">
+                <img
+                    src="/Coffee.png"
+                    alt="coffee"
+                    className="hidden sm:block w-full h-[500px] md:h-[650px] object-cover"/>
+                <img
+                    src="/coffemobile.jpg"
+                    alt="coffee-mobile"
+                    className="block sm:hidden w-full h-[450px] object-cover opacity-30"/>
 
-  {/* Desktop Image */}
-  <img 
-    src="/Coffee.png"
-    alt="coffee"
-    className="hidden sm:block w-full h-[500px] md:h-[650px] object-cover"
-  />
+                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
+                    <h1 className="text-[#461901] font-bold text-3xl sm:text-3xl md:text-6xl drop-shadow">
+                        Warmth and comfort with every sip
+                    </h1>
 
-  {/* Mobile Image */}
-  <img 
-    src="/coffemobile.jpg"
-    alt="coffee-mobile"
-    className="block sm:hidden w-full h-[450px] object-cover opacity-30"
-  />
-
-  {/* Text Content */}
-  <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-    <h1 className="text-[#461901] font-bold text-4xl sm:text-5xl md:text-6xl drop-shadow">
-      CoFFee
-    </h1>
-
-    <p className="text-black mt-3 max-w-[350px] sm:max-w-[450px] md:max-w-[550px] text-sm sm:text-base">
-      Made from roasted coffee beans, it brings warmth and comfort with every sip,
-       whether enjoyed early in the morning or during a peaceful break.
-    </p>
-  </div>
-
-  {/* Buttons */}
-  <div className="absolute inset-x-0 bottom-6 sm:bottom-10 flex flex-col items-center gap-3">
-    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
-      Order Now
-    </button>
-
-    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
-      Best deal
-    </button>
-  </div>
-
-</section>
-
-            
-
-
-
+                    <p className="text-black mt-3 max-w-[350px] sm:max-w-[450px] md:max-w-[550px] text-1xl sm:text-base">
+                        Made from roasted coffee beans, it brings warmth and comfort with every sip,
+                        whether enjoyed early in the morning or during a peaceful break.
+                    </p>
+                </div>
+                <div className="absolute inset-x-0 bottom-10 sm:bottom-25 flex flex-col items-center gap-3">
+                    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
+                        Order Now
+                    </button>
+                    <button className="bg-[#461901] text-white rounded-2xl px-14 py-2 text-sm sm:text-base">
+                        Best deal
+                    </button>
+                </div>
+            </section>
         </div>
     )
 
