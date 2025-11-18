@@ -34,7 +34,7 @@ const Offer = () => {
                         <h1 className='text-[#461901] font-bold text-3xl'>Timing schedule</h1>
                     </div>
                 </div>
-                <div className='flex items-center justify-center m-6'>
+                <div className='flex items-center justify-center m-6 flex-wrap'>
                     <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>10.00AM</button>
                     <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>03.00PM</button>
                     <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>09.00PM</button>
