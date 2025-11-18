@@ -11,18 +11,19 @@ const Offer = () => {
                 </div>
 
             </div>
-            <div className="grid grid-cols-2 gap-3 justify-items-center mt-6">
+            <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 justify-items-center mt-6">
                 <div>
-                    <Image src={"/off1.jpg"} alt='area' width={350} height={250} />
+                    <Image src={"/off1.jpg"} alt='area' width={360} height={250} />
                 </div>
                 <div>
                     <Image src={"/off2.jpg"} alt='area' width={350} height={150} />
+
                 </div>
                 <div>
-                    <Image src={"/off3.webp"} alt='area' width={350} height={150} />
+                    <Image src={"/off3.webp"} alt='area' width={350} height={100} />
                 </div>
                 <div>
-                    <Image src={"/off4.jpeg"} alt='area' width={350} height={270} />
+                    <Image src={"/off4.jpeg"} alt='area' width={350} height={300} />
                 </div>
             </div>
             <br />
