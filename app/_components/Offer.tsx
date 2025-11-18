@@ -11,7 +11,7 @@ const Offer = () => {
                 </div>
 
             </div>
-            <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 justify-items-center mt-6">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 justify-items-center mt-6">
                 <div>
                     <Image src={"/off1.jpg"} alt='area' width={360} height={250} />
                 </div>
