@@ -8,7 +8,7 @@ const Services = () => {
     <h1 className='text-[#461901] font-bold text-4xl'>Flavours</h1>
   </div>
 
-  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-7 items-center justify-center'>
+  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-7 items-center justify-center px-2 sm:px-6 lg:px-8'>
         <div className='bg-white text-black flex items-center justify-center rounded-4xl m-5 p-3'>
       <div>
         <Image src={"/se2.webp"} alt="service image" width={500} height={500} />
