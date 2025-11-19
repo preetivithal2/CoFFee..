@@ -46,7 +46,7 @@ const Offer = () => {
                     <Image src={"/feedback.jpg"} alt="serice image" width={300} height={300} />
                 </div>
                 <div>
-                    <div className='mx-6'>
+                    <div className='mx-6 shadow z-50'>
                         <h1 className='text-1xl font-bold'>Tommy james</h1>
                         <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat !</p>
                     </div>
