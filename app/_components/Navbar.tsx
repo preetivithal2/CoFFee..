@@ -1,20 +1,49 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+"use client"
+
+import { useState, useEffect } from 'react';
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Home', href: '#', current: false },
-  { name: 'Order', href: '#', current: false },
-  { name: 'Contact us', href: '#', current: false },
-]
+  { name: 'Services', href: '#', current: false },
+  { name: 'About us', href: './Contact.tsx', current: false },
+];
 
-function classNames(...classes:any) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: any) {
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Navbar() {
+  // State to track if the user has scrolled down
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the scroll position is more than 10 pixels from the top
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    // Attach the event listener to the window
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Use a template literal to dynamically add Tailwind classes.
+  // The 'shadow-md' class is added only when isScrolled is true.
+  // The 'transition-shadow duration-300' ensures a smooth transition.
+  const navClasses = `relative bg-[#F5EDE7] sticky top-0 z-50 transition-shadow duration-300 ${
+    isScrolled ? 'shadow-md' : 'shadow-none'
+  }`;
+
   return (
-    <Disclosure as="nav" className="relative bg-[#F4EFEC] sticky top-0 shadow z-50">
+    // Replaced the original static className with the dynamic navClasses
+    <Disclosure as="nav" className={navClasses}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -33,10 +62,9 @@ export default function Navbar() {
                 src="logo2.png"
                 className="h-[40px] w-[80px]"
               /> 
-              
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
+              <div className="navlinks flex space-x-3">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -128,5 +156,5 @@ export default function Navbar() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }

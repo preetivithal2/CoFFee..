@@ -1,62 +1,104 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 
-const Offer = () => {
-    return (
-        <div>
-            <div>
-                <div className='flex items-center justify-center mt-7 flex-col'>
-                    <h1 className='text-[#461901] font-bold text-2xl'>Get the best offer here!</h1>
-                    <h4 className='text-[#461901] font-bold text-1xl'>Choose you fav one</h4>
-                </div>
-
-            </div>
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 justify-items-center mt-6 px-2 sm:px-6 lg:px-8">
-                <div>
-                    <Image src={"/off1.jpg"} alt='area' width={360} height={250} />
-                </div>
-                <div>
-                    <Image src={"/off2.jpg"} alt='area' width={350} height={150} />
-
-                </div>
-                <div>
-                    <Image src={"/off3.webp"} alt='area' width={350} height={100} />
-                </div>
-                <div>
-                    <Image src={"/off4.jpeg"} alt='area' width={350} height={300} />
-                </div>
-            </div>
-            <br />
-            <hr />
-            <div>
-                <div>
-                    <div className='flex items-center justify-center mt-7'>
-                        <h1 className='text-[#461901] font-bold text-3xl'>Timing schedule</h1>
-                    </div>
-                </div>
-                <div className='flex items-center justify-center m-6 flex-wrap'>
-                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>10.00AM</button>
-                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>03.00PM</button>
-                    <button className='bg-[#461901] color-white rounded-2xl px-5 py-2 m-2'>09.00PM</button>
-                </div>
-            </div>
-
-            <div className='bg-white text-black flex items-center justify-center rounded-4xl m-5 p-3'>
-                <div>
-                    <Image src={"/feedback.jpg"} alt="serice image" width={300} height={300} />
-                </div>
-                <div>
-                    <div className='mx-6 shadow z-50'>
-                        <h1 className='text-1xl font-bold'>Tommy james</h1>
-                        <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat !</p>
-                    </div>
-                    <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center w-25 px-2 mx-6 mt-2' >
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    )
+interface ProductCardProps {
+  price: string;
+  title: string;
+  description: string;
+  image: string;
+  defaultQty?: number;
 }
 
-export default Offer
+const ProductCard: React.FC<ProductCardProps> = ({
+  price,
+  title,
+  description,
+  image,
+  defaultQty = 1,
+}) => {
+  const [qty, setQty] = useState(defaultQty);
+
+  return (
+    <div className="flex flex-col items-center text-center w-full">
+      <img src={image} alt={title} className="w-48 sm:w-56 md:w-60 lg:w-64 object-contain" />
+
+      <p className="text-lg font-semibold mt-4">${price}</p>
+
+      <h3 className="text-xl font-semibold mt-2">{title}</h3>
+
+      <p className="text-gray-500 text-sm max-w-[250px] mt-1">{description}</p>
+
+      {/* Quantity + Delivery */}
+      <div className="mt-4 flex items-center gap-4">
+
+        {/* Quantity Box */}
+        <div className="border border-gray-400 rounded-md px-3 py-2 flex items-center gap-3">
+          <button
+            className="text-xl font-bold"
+            onClick={() => setQty((prev) => (prev > 1 ? prev - 1 : 1))}
+          >
+            -
+          </button>
+          <span className="text-lg">{qty}</span>
+          <button
+            className="text-xl font-bold"
+            onClick={() => setQty((prev) => prev + 1)}
+          >
+            +
+          </button>
+        </div>
+
+        {/* Delivery Button */}
+        <button className="bg-[#FF5A3C] text-white px-6 py-2 rounded-md font-medium hover:bg-[#e64d32] transition">
+          Get Delivery
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const BestOfferSection = () => {
+  return (
+    <section className="w-full px-6 py-20 flex flex-col items-center">
+
+      {/* Heading */}
+      <h2 className="text-3xl md:text-4xl font-semibold text-black text-center">
+        That is Our Best Offer
+      </h2>
+
+      <p className="text-gray-600 text-center max-w-xl mt-2">
+        A coffee shop will help you to tell the audience what your business.
+      </p>
+
+      {/* Card Layout */}
+      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 w-full max-w-7xl place-items-center">
+
+        <ProductCard
+          price="5.99"
+          title="Brazilian coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/1.png"
+          defaultQty={3}
+        />
+
+        <ProductCard
+          price="4.99"
+          title="Vietnam coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/2.png"
+          defaultQty={2}
+        />
+
+        <ProductCard
+          price="3.99"
+          title="Indonesian coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/3.png"
+          defaultQty={1}
+        />
+      </div>
+    </section>
+  );
+};
+
+export default BestOfferSection;

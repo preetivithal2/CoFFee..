@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navlinks{
+text-decoration: none;
+}
+.card{
+  display: flex;
+  justify-items: center;
+  height: 200px;
+  width: 300px;
+  margin: 40px;
+}
