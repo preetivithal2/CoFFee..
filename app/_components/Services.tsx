@@ -1,84 +1,75 @@
-import Image from 'next/image'
-import React from 'react'
+import React from "react";
 
-const Services = () => {
-  return (
-    <div className='flex justify-center items-center flex-col bg-[#F5EDE7]'>
-      <div className='flex items-center justify-center mt-7'>
-        <h1 className='text-[#461901] font-bold text-4xl'>Flavours</h1>
-      </div>
-
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-7 items-center justify-center lg:mx-[80px]'>
-        <div className='bg-[#77341D] border-l-0 text-white flex items-center justify-center rounded-4xl m-5 '>
-          <div>
-            <Image src={"/se2.webp"} alt="service image" width={500} height={500} />
-          </div>
-          <div className=' flex flex-col justify-start items-start'>
-            <div className=''>
-              <h1 className='text-1xl font-bold'>Beans Coffee</h1>
-              <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat reiciendis sunt impedit excepturi numquam rem earum, iusto veniam! Quo!</p>
-            </div>
-            <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center p-2 '>
-              <button >Order Now</button>
-            </div>
-          </div>
-       </div>
- 
-        <div className='bg-[#F5EDE7] border-l-0  text-black flex items-center justify-center rounded-4xl m-5 p-3'>
-          <div>
-            <Image src={"/ss.png"} alt="service image" width={500} height={500} />
-          </div>
-          <div>
-            <div className='mx-6'>
-              <h1 className='text-1xl font-bold'>Black Coffee</h1>
-              <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat reiciendis sunt impedit excepturi numquam rem earum, iusto veniam! Quo!</p>
-            </div>
-            <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center w-25 px-2 mx-6 mt-2'>
-              <button>Order Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div className='bg-[#F5EDE7] border-l-0 text-black flex items-center justify-center rounded-4xl m-5 p-3'>
-          <div>
-            <Image src={"/s-2.png"} alt="service image" width={500} height={500} />
-          </div>
-          <div>
-            <div className='mx-6'>
-              <h1 className='text-1xl font-bold'>Expresso</h1>
-              <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat reiciendis sunt impedit excepturi numquam rem earum, iusto veniam! Quo!</p>
-            </div>
-            <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center w-25 px-2 mx-6 mt-2'>
-              <button>Order Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div className='bg-[#F5EDE7] border-l-0 text-black flex items-center justify-center rounded-4xl m-5 p-3'>
-          <div>
-            <Image src={"/s-5.png"} alt="service image" width={500} height={500} />
-          </div>
-          <div>
-            <div className='mx-6'>
-              <h1 className='text-1xl font-bold'>Expresso</h1>
-              <p className='text-[13px] text-gray'>Lorem ipsum dolor sit ametmagnam placeat reiciendis sunt impedit excepturi numquam rem earum, iusto veniam! Quo!</p>
-            </div>
-            <div className='bg-amber-950 text-amber-50 rounded-full flex items-center justify-center w-25 px-2 mx-6 mt-2'>
-              <button>Order Now</button>
-            </div>
-          </div>
-        </div>
-      </div> 
-
-      <div className='flex w-[350px] items-center justify-center mt-6'>
-        <button className='bg-[#461901] text-white rounded-2xl px-10 py-2 m-2'>
-          Read more..
-        </button>
-      </div>
-      <hr className='w-full mt-6' />
-    </div>
-
-  )
+interface NewsCardProps {
+  image: string;
+  title: string;
+  description: string;
 }
 
-export default Services
+const NewsCard: React.FC<NewsCardProps> = ({ image, title, description }) => {
+  return (
+    <div className="w-full max-w-sm bg-white rounded-2xl shadow-md overflow-hidden">
+      {/* Image */}
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-52 object-cover"
+      />
+
+      {/* Content */}
+      <div className="p-5">
+        <h3 className="text-xl font-semibold text-black">{title}</h3>
+
+        <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+          {description}
+        </p>
+
+        <a className="text-[#FF5A3C] font-medium text-sm mt-4 inline-flex items-center gap-1 cursor-pointer hover:underline">
+          Learn More →
+        </a>
+      </div>
+    </div>
+  );
+};
+
+const UpdateNewsSection = () => {
+  return (
+    <section className="w-full px-6 py-20 flex flex-col items-center">
+      
+      {/* Heading */}
+      <h2 className="text-3xl md:text-4xl font-semibold text-black text-center">
+       Enjoy you CoFFee here..
+      </h2>
+
+      <p className="text-gray-600 text-center mt-3 max-w-2xl">
+        Select you favourite coffee place with a cup of brewed coffee represents a contribution of up to 1.8 grams of
+        fiber of the recommended.
+      </p>
+
+      {/* Cards Grid */}
+      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-7xl place-items-center">
+        
+        <NewsCard
+          image="/off1.jpg"
+          title="Coffe beans"
+          description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
+        />
+
+        <NewsCard
+          image="/off2.jpg"
+          title="Coffe beans"
+          description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
+        />
+
+        <NewsCard
+          image="/off3.webp"
+          title="Coffe beans"
+          description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
+        />
+
+      </div>
+    </section>
+  );
+};
+
+export default UpdateNewsSection;

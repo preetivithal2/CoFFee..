@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       <p className="text-lg font-semibold mt-4">${price}</p>
 
-      <h3 className="text-xl font-semibold mt-2">{title}</h3>
+      <h3 className="text-xl font-semibold mt-2 text-amber-950">{title}</h3>
 
       <p className="text-gray-500 text-sm max-w-[250px] mt-1">{description}</p>
 
@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="mt-4 flex items-center gap-4">
 
         {/* Quantity Box */}
-        <div className="border border-gray-400 rounded-md px-3 py-2 flex items-center gap-3">
+        <div className="border text-amber-950 border-gray-400 rounded-md px-3 py-2 flex items-center gap-3">
           <button
             className="text-xl font-bold"
             onClick={() => setQty((prev) => (prev > 1 ? prev - 1 : 1))}
@@ -49,8 +49,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {/* Delivery Button */}
-        <button className="bg-[#FF5A3C] text-white px-6 py-2 rounded-md font-medium hover:bg-[#e64d32] transition">
-          Get Delivery
+        <button className="bg-amber-950 text-white px-6 py-2 rounded-md font-medium hover:bg-[#e64d32] transition">
+          Order Now
         </button>
       </div>
     </div>

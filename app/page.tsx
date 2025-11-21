@@ -17,10 +17,10 @@ export default function Home() {
       <Navbar />
       {/* <Banner /> */}
       <NewBanner />
-      {/* <Services /> */}
+      <Services />
+
+
       <Offer />
-
-
       <ServicesSection />
       <ContactFooter />
     </div>
