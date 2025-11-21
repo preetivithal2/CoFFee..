@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesSection = () => {
   return (
-    <section className="w-full bg-[#F5EFEA] py-20 px-6 flex flex-col items-center">
+    <section className="w-full bg-[#F5EFEA] py-20 px-6 flex flex-col items-center ">
       
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-semibold text-[#3B260C] tracking-wide">
@@ -14,13 +14,11 @@ const ServicesSection = () => {
         of beans sourced from specific regions.
       </p>
 
-      {/* Card Container */}
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl">
+      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         
         {/* Card 1 */}
         <div className="bg-white shadow-lg rounded-2xl p-10 flex flex-col items-center text-center">
           <div className="bg-[#F5EFEA] p-5 rounded-full mb-5">
-            {/* Coffee Cup Icon */}
             <svg width="45" height="45" fill="none" stroke="#A67C52" strokeWidth="2" viewBox="0 0 24 24">
               <path d="M3 10h13v7a4 4 0 01-4 4H7a4 4 0 01-4-4v-7z" />
               <path d="M16 10h2a3 3 0 010 6h-2" />

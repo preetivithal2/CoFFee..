@@ -47,7 +47,7 @@ const UpdateNewsSection = () => {
       </p>
 
       {/* Cards Grid */}
-      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-7xl place-items-center">
+      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 w-full place-items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         
         <NewsCard
           image="/off1.jpg"

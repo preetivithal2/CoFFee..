@@ -16,38 +16,29 @@ function classNames(...classes: any) {
 }
 
 export default function Navbar() {
-  // State to track if the user has scrolled down
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the scroll position is more than 10 pixels from the top
       setIsScrolled(window.scrollY > 10);
     };
 
-    // Attach the event listener to the window
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Use a template literal to dynamically add Tailwind classes.
-  // The 'shadow-md' class is added only when isScrolled is true.
-  // The 'transition-shadow duration-300' ensures a smooth transition.
   const navClasses = `relative bg-[#F5EDE7] sticky top-0 z-50 transition-shadow duration-300 ${
     isScrolled ? 'shadow-md' : 'shadow-none'
   }`;
 
   return (
-    // Replaced the original static className with the dynamic navClasses
     <Disclosure as="nav" className={navClasses}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>

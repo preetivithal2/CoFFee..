@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ContactFooter() {
   return (
     <footer className="w-full bg-[#E8DDD3] py-12 px-4 md:px-12 lg:px-20 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* Left Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#461901]">Contact Us</h2>

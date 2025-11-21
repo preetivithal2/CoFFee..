@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   const [qty, setQty] = useState(defaultQty);
 
   return (
-    <div className="flex flex-col items-center text-center w-full">
+    <div className="flex flex-col items-center text-center w-full ">
       <img src={image} alt={title} className="w-48 sm:w-56 md:w-60 lg:w-64 object-contain" />
 
       <p className="text-lg font-semibold mt-4">${price}</p>
@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="mt-4 flex items-center gap-4">
 
         {/* Quantity Box */}
-        <div className="border text-amber-950 border-gray-400 rounded-md px-3 py-2 flex items-center gap-3">
+        <div className="border text-amber-950 border-gray-400 rounded-md px-3 py-2 flex items-center gap-5 mx-auto max-w-7xl sm:px-6 lg:px-13">
           <button
             className="text-xl font-bold"
             onClick={() => setQty((prev) => (prev > 1 ? prev - 1 : 1))}
@@ -94,6 +94,30 @@ const BestOfferSection = () => {
           title="Indonesian coffee beans"
           description="Coffee that’s always you handle your own the way you like."
           image="/3.png"
+          defaultQty={1}
+        />
+
+        <ProductCard
+          price="5.99"
+          title="Brazilian coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/1.png"
+          defaultQty={3}
+        />
+
+        <ProductCard
+          price="4.99"
+          title="Vietnam coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/6.jpg"
+          defaultQty={2}
+        />
+
+        <ProductCard
+          price="3.99"
+          title="Indonesian coffee beans"
+          description="Coffee that’s always you handle your own the way you like."
+          image="/7.webp"
           defaultQty={1}
         />
       </div>

@@ -5,10 +5,8 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <section className="w-full bg-[#e8ddd3] py-16">
-      {/* MAIN CONTAINER – SAME AS NAVBAR WIDTH */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-        
-        {/* LEFT SIDE TEXT */}
+
         <div className="max-w-lg text-center md:text-left space-y-4">
           <p className="text-sm text-gray-700">The Smokey</p>
 
@@ -31,11 +29,10 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE */}
         <div className="mt-10 md:mt-0">
-          <div className="relative w-[500px] md:w-[500px] h-[550px] md:h-[400px]">
+          <div className="relative w-[500px] md:w-[300px] h-[330px] md:h-[400px]">
             <Image
-              src="/banner.png" // place your cup PNG inside /public/
+              src="/banner.png"
               alt="Coffee Cup"
               fill
               className="object-contain"
