@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "price": "5.99",
+    "title": "Brazilian coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/1.png",
+    "defaultQty": 3
+  },
+  {
+    "id": 2,
+    "price": "4.99",
+    "title": "Vietnam coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/2.png",
+    "defaultQty": 2
+  },
+  {
+    "id": 3,
+    "price": "3.99",
+    "title": "Indonesian coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/3.png",
+    "defaultQty": 1
+  },
+  {
+    "id": 4,
+    "price": "5.99",
+    "title": "Brazilian coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/1.png",
+    "defaultQty": 3
+  },
+  {
+    "id": 5,
+    "price": "4.99",
+    "title": "Vietnam coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/6.jpg",
+    "defaultQty": 2
+  },
+  {
+    "id": 6,
+    "price": "3.99",
+    "title": "Indonesian coffee beans",
+    "description": "Coffee that’s always you handle your own the way you like.",
+    "image": "/7.webp",
+    "defaultQty": 1
+  }
+]

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ContactFooter() {
   return (
-    <footer className="w-full bg-[#E8DDD3] pt-12 px-4 md:px-12 lg:px-20 ">
+    <footer className="w-full bg-[#E8DDD3] py-1 pt-6 px-4 md:px-12 lg:px-20 ">
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* Left Content */}
         <div className="space-y-6">
@@ -26,7 +26,7 @@ export default function ContactFooter() {
         </div>
 
         {/* Form */}
-        <form className="w-full shadow-2xl bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl  space-y-4">
+        <form className="border-b-6  w-full shadow-2xl bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl  space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -67,9 +67,6 @@ export default function ContactFooter() {
           </a>
           . All Rights Reserved.
         </p>
-        <span className="block text-sm text-body text-center ">
-
-        </span>
       </div>
 
 
