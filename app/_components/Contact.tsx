@@ -16,13 +16,13 @@ export default function OurStorySection() {
 
       {/* Text Content */}
       <div className="flex flex-col space-y-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#B97A20]">Our Story</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#3B260C]">Our Story</h2>
 
         <p className="text-gray-700 leading-relaxed text-base md:text-lg">
           Paragraph text comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
 
-        <button className="bg-[#B97A20] hover:bg-[#9a651a] transition text-white font-medium px-6 py-3 rounded-md w-fit shadow-md">
+        <button className="bg-[#3B260C] hover:opacity-80 transition text-white font-medium px-6 py-3 rounded-md w-fit shadow-md">
           Read More
         </button>
       </div>

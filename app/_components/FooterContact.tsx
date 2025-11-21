@@ -53,7 +53,7 @@ export default function ContactFooter() {
 
           <button
             type="submit"
-            className="w-full bg-[#461901] text-white py-2 rounded-md font-semibold hover:bg-[#5a2515] transition"
+            className="w-full bg-[#461901] text-white py-2 rounded-md font-semibold hover:opacity-80 transition"
           >
             SUBMIT
           </button>

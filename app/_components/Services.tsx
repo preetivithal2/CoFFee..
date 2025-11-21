@@ -24,7 +24,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ image, title, description }) => {
           {description}
         </p>
 
-        <a className="text-[#FF5A3C] font-medium text-sm mt-4 inline-flex items-center gap-1 cursor-pointer hover:underline">
+        <a className="text-[#3B260C] font-medium text-sm mt-4 inline-flex items-center gap-1 cursor-pointer hover:underline">
           Learn More →
         </a>
       </div>
@@ -37,7 +37,7 @@ const UpdateNewsSection = () => {
     <section className="w-full px-6 py-20 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-black text-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#3B260C] text-center">
        Enjoy you CoFFee here..
       </h2>
 

@@ -49,7 +49,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {/* Delivery Button */}
-        <button className="bg-amber-950 text-white px-6 py-2 rounded-md font-medium hover:bg-[#e64d32] transition">
+        <button className="bg-amber-950 text-white px-6 py-2 rounded-md font-medium hover:opacity-80 transition">
           Order Now
         </button>
       </div>
@@ -62,7 +62,7 @@ const BestOfferSection = () => {
     <section className="w-full px-6 py-20 flex flex-col items-center">
 
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-black text-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#3B260C] text-center">
         That is Our Best Offer
       </h2>
 

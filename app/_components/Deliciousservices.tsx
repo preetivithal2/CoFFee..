@@ -5,7 +5,7 @@ const ServicesSection = () => {
     <section className="w-full bg-[#F5EFEA] py-20 px-6 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#4B2E2A] tracking-wide">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#3B260C] tracking-wide">
         OUR DELICIOUS SERVICES
       </h2>
 
