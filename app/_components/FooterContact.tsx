@@ -26,7 +26,7 @@ export default function ContactFooter() {
         </div>
 
         {/* Form */}
-        <form className="w-full bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl shadow-sm space-y-4">
+        <form className="w-full shadow-2xl bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl  space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -58,6 +58,67 @@ export default function ContactFooter() {
             SUBMIT
           </button>
         </form>
+        {/* <div className="flex items-center flex-col justify-center"><hr className="my-6 border-default sm:mx-auto lg:my-8" />
+        <span className="block text-sm text-body text-amber-900 sm:text-center ">© 2025 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.</span></div> */}
+    
+
+
+   <footer className="bg-neutral-primary-soft rounded-base shadow-2xl border border-default m-4 ">
+      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        
+        <div className="sm:flex sm:items-center sm:justify-between text-black">
+          <a
+            href="https://flowbite.com/"
+            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              className="h-7"
+              alt="Flowbite Logo"
+            />
+            <span className="text-heading self-center text-2xl font-semibold whitespace-nowrap">
+              Flowbite
+            </span>
+          </a>
+
+          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-body sm:mb-0">
+            <li>
+              <a href="#" className="hover:underline me-4 md:me-6">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline me-4 md:me-6">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline me-4 md:me-6">
+                Licensing
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <hr className="my-6 border-amber-950 sm:mx-auto lg:my-8" />
+
+        <span className="block text-sm text-body text-center ">
+          © 2025{" "}
+          <a href="https://flowbite.com/" className="hover:underline">
+            Flowbite™
+          </a>
+          . All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+
+
+
       </div>
     </footer>
   );
