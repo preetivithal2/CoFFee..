@@ -33,9 +33,9 @@ const Banner = () => {
 
         {/* RIGHT SIDE IMAGE */}
         <div className="mt-10 md:mt-0">
-          <div className="relative w-[240px] md:w-[330px] h-[240px] md:h-[330px]">
+          <div className="relative w-[500px] md:w-[500px] h-[550px] md:h-[400px]">
             <Image
-              src="/coffee.png" // place your cup PNG inside /public/
+              src="/banner.png" // place your cup PNG inside /public/
               alt="Coffee Cup"
               fill
               className="object-contain"

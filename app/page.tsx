@@ -6,6 +6,7 @@ import Offer from "./_components/Offer";
 import NewBanner from "./_components/NewBanner";
 import ContactFooter from "./_components/FooterContact";
 import ServicesSection from "./_components/Deliciousservices";
+import OurStorySection from "./_components/Contact";
 
 
 
@@ -17,11 +18,10 @@ export default function Home() {
       <Navbar />
       {/* <Banner /> */}
       <NewBanner />
-      <Services />
-
-
       <Offer />
+      <Services />
       <ServicesSection />
+      <OurStorySection />
       <ContactFooter />
     </div>
   );
