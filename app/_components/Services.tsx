@@ -51,19 +51,19 @@ const UpdateNewsSection = () => {
         
         <NewsCard
           image="/off1.jpg"
-          title="Coffe beans"
+          title="Starbucks"
           description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
         />
 
         <NewsCard
           image="/off2.jpg"
-          title="Coffe beans"
+          title="Dunkin"
           description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
         />
 
         <NewsCard
           image="/off3.webp"
-          title="Coffe beans"
+          title="Tim Hortons"
           description="These advertising mottos are targeted to the 56% of coffee drinking consumers."
         />
 

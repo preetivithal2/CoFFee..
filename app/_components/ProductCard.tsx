@@ -1,8 +1,5 @@
 "use client";
-import offerData from "@/data/cards.json"; // ← import JSON
-// import ProductCard from "./ProductCard";
 import React, { useState } from "react";
-console.log("Offer Data:", offerData);
 
 interface ProductCardProps {
   price: string;
@@ -60,43 +57,4 @@ const ProductCard: React.FC<ProductCardProps> = ({
   );
 };
 
-const BestOfferSection = () => {
-  return (
-    <section className="w-full px-6 py-20 flex flex-col items-center">
-
-      {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#3B260C] text-center">
-        That is Our Best Offer
-      </h2>
-
-      <p className="text-gray-600 text-center max-w-xl mt-2">
-        A coffee shop will help you to tell the audience what your business.
-      </p>
-
-      {/* Card Layout */}
-      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 w-full max-w-7xl place-items-center">
-
-     {offerData.map((item) => (
-          <ProductCard
-            key={item.id}
-            price={item.price}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            defaultQty={item.defaultQty}
-          />
-         
-        )
-       
-        ) } 
-    
-
-      </div>    
-    </section>
-  );
-};
-
-export default BestOfferSection;
-
-
-
+export default ProductCard;

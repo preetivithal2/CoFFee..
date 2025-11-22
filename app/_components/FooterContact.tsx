@@ -5,7 +5,6 @@ export default function ContactFooter() {
   return (
     <footer className="w-full bg-[#E8DDD3] py-1 pt-6 px-4 md:px-12 lg:px-20 ">
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        {/* Left Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#461901]">Contact Us</h2>
 
@@ -26,7 +25,7 @@ export default function ContactFooter() {
         </div>
 
         {/* Form */}
-        <form className="border-b-6  w-full shadow-2xl bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl  space-y-4">
+        <form className=" w-full shadow-2xl bg-white/40 backdrop-blur-sm border border-[#d8c2aa] p-6 md:p-8 rounded-xl  space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -59,13 +58,13 @@ export default function ContactFooter() {
           </button>
         </form>
       </div>
-      <div className="m-7 w-full">
-        <p className="text-black text-center">
+      <div className="m-7 ">
+        <p className="text-black text-center w-full">
           © 2025{" "}
           <a href="https://AIORAA.com/" className="hover:underline">
             AIORAA™
           </a>
-          . All Rights Reserved.
+          .All Rights Reserved.
         </p>
       </div>
 

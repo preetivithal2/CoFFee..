@@ -29,16 +29,16 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="mt-10 md:mt-0">
-          <div className="relative w-[500px] md:w-[300px] h-[330px] md:h-[400px]">
-            <Image
-              src="/banner.png"
-              alt="Coffee Cup"
-              fill
-              className="object-contain"
-            />
-          </div>
-        </div>
+<div className="md:w-1/2 mb-8 md:mb-0">
+  <Image 
+    src="/banner.png"
+    alt="Coffee Image"
+    width={200}        // actual width of your image or desired size
+    height={200}       // actual height of your image or desired size
+    className="w-full  object-contain"
+    priority
+  />
+</div>
 
       </div>
     </section>
