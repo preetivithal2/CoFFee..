@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "price": "5.99",
+    "price": "4.06",
     "title": "Brazilian coffee beans",
     "description": "Coffee that’s always you handle your own the way you like.",
     "image": "/5.png",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "price": "4.99",
+    "price": "7.69",
     "title": "Vietnam coffee beans",
     "description": "Coffee that’s always you handle your own the way you like.",
     "image": "/6.png",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "price": "3.99",
+    "price": "5.65",
     "title": "Indonesian coffee beans",
     "description": "Coffee that’s always you handle your own the way you like.",
     "image": "/4.png",

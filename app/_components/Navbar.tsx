@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ShoppingCart } from 'lucide-react';
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
-  { name: 'Home', href: '#', current: false },
+  { name: 'Home', href: '/', current: false },
   { name: 'Services', href: '#', current: false },
   { name: 'About us', href: './Contact.tsx', current: false },
 ];
@@ -30,9 +31,8 @@ export default function Navbar() {
     };
   }, []);
 
-  const navClasses = `relative bg-[#F5EDE7] sticky top-0 z-50 transition-shadow duration-300 ${
-    isScrolled ? 'shadow-md' : 'shadow-none'
-  }`;
+  const navClasses = `relative bg-[#F5EDE7] sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : 'shadow-none'
+    }`;
 
   return (
     <Disclosure as="nav" className={navClasses}>
@@ -52,7 +52,7 @@ export default function Navbar() {
                 alt="Your Company"
                 src="logo2.png"
                 className="h-[40px] w-[80px]"
-              /> 
+              />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="navlinks flex space-x-3">
@@ -79,7 +79,8 @@ export default function Navbar() {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
+              {/* <BellIcon aria-hidden="true" className="size-6" /> */}
+              <ShoppingCart className="w-6 h-6 mr-2" />
             </button>
 
             {/* Profile dropdown */}

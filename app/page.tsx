@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
 
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Banner /> */}
       <NewBanner />
       <Offer />
@@ -23,6 +23,9 @@ export default function Home() {
       <ServicesSection />
       <OurStorySection />
       <ContactFooter />
+      
     </div>
   );
 }
+
+
