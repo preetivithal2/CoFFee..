@@ -31,27 +31,27 @@ export default function RootLayout({
          <Navbar />
         {children}
 
-        <script src="https://harsh-kumar-saaniya.github.io/Chat-UI-Widget/script.js"
-   data-assistant-name="Mr.Coffee"
-  data-assistant-avatar="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-  data-footer-text="Powered by Aioraa"
-  data-chat-button="#3B260C"
-  data-chat-header="#461901"
-  data-user-bubble="#33334d"
-  data-bot-bubble="#3B260C"
-  data-footer-bg="#461901"
-  data-chat-bg="#E8DDD3"
-  data-input-bg="#E8DDD3"
-  data-input-color="#4C3820"
-  data-send-button="#E8DDD3"
-  data-send-hover="#33334d"
-  data-choice-bg="#5c4dff"
-  data-choice-color="#461901"
-  data-choice-hover="#4a3dcf"
-  data-enable-typing="true"
-  data-auto-welcome="true"
-        >
-        
+         <script src="https://harsh-kumar-saaniya.github.io/Chat-UI-Widget/script.js"
+         data-webhook="https://mehakvithal.app.n8n.cloud/webhook/04a312f4-941c-45f9-b102-850ba6387ddf/chat"
+         data-assistant-name="Mr.Coffee"
+         data-assistant-avatar="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+         data-footer-text="Powered by Aioraa"
+         data-chat-button="#3B260C"
+         data-chat-header="#CCBEB1"
+         data-user-bubble="#664E36"
+         data-bot-bubble="#664E36"
+         data-footer-bg="#CCBEB1"
+         data-chat-bg="#F2E9E2"
+         data-input-bg="#F5EDE7"
+         data-input-color="#"
+         data-footer-text-color= "#461901"
+         data-send-button="#664E36"
+         data-send-hover="#0A0A0A"
+         data-choice-bg="#5c4dff"
+         data-choice-color="#"
+         data-choice-hover="#3B260C"
+         data-enable-typing="true"
+         data-auto-welcome="true">
         
         </script>
       </body>
